@@ -1,0 +1,4 @@
+String state = (String)doc['state'].value;
+double deadline = doc[date_field].value;
+double factor = state_factor[state];
+factor * deadline;

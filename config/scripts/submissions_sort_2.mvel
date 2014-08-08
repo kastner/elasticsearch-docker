@@ -1,0 +1,1 @@
+doc['submission.moderator_id'].empty ? 0 : 1

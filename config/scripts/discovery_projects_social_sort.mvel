@@ -1,0 +1,8 @@
+String state = (String)doc['state'].value;
+if (state != 'live') {
+  project_ids_count;
+} else {
+  int project_id = (int)doc['id'].value;
+  int index = project_ids.indexOf(project_id);
+  index == -1 ? project_ids_count : index;
+}

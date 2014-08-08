@@ -1,0 +1,2 @@
+state = doc['state'].value;
+state_boosts[state];

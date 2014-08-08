@@ -1,0 +1,14 @@
+cluster.name: "elasticsearch_test"
+node.name: "test_node"
+http.port: 9250
+transport.tcp.port: 9350
+gateway.type: none
+index.store.type: "memory"
+path.data: "/tmp"
+path.work: "/tmp"
+discovery.zen.ping.multicast.enabled: false
+script.disable_dynamic: false
+node.test: true
+node.bench: true
+index.number_of_shards: 1
+index.number_of_replicas: 0

@@ -21,6 +21,15 @@ VOLUME ["/data"]
 # Define working directory.
 WORKDIR /data
 
+# Scoring scripts
+COPY config/scripts/ /elasticsearch/config/scripts/
+
+# Test config
+COPY config/elasticsearch-test-cluster.yml /elasticsearch/config/
+
+# Install plugin
+RUN /elasticsearch/bin/plugin -i mobz/elasticsearch-head
+
 # Define default command.
 CMD ["/elasticsearch/bin/elasticsearch"]
 
